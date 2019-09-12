@@ -4,7 +4,7 @@ import re
 from bs4 import BeautifulSoup
 
 while True:
-    answer = input("가사를 알고 싶은 노래 이름을 입력해주세요 : ") # 담아
+    answer = input("가사를 알고 싶은 노래 이름을 입력해주세요 : ")
     url = urllib.parse.quote(answer)
 
     html = requests.get('https://search.naver.com/search.naver?query=' + url).text
